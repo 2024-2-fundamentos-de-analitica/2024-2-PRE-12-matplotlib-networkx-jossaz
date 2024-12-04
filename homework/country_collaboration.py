@@ -137,7 +137,7 @@ def plot_country_collaboration(countries, co_occurrences):
 
 def make_plot(n_countries):
     """Función principal"""
-3
+
     if not os.path.exists("files"):
         os.makedirs("files")
 
@@ -153,6 +153,10 @@ def make_plot(n_countries):
         most_frequent_countries,
     )
     plot_country_collaboration(most_frequent_countries, co_occurrences)
+
+
+if __name__ == "__main__":
+    make_plot(n_countries=20)
 
 
 if __name__ == "__main__":
